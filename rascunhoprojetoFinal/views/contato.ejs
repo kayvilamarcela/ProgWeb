@@ -1,0 +1,24 @@
+<%- include('partials/header') %>
+
+<h1>Faça seu Pedido</h1>
+
+<form action="/contato" method="POST">
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome" placeholder="Seu nome" required><br><br>
+
+    <label for="prato">Prato Desejado:</label><br>
+    <select id="prato" name="prato" required>
+        <option value="">Selecione</option>
+        <option value="hamburguer">Hambúrguer Artesanal</option>
+        <option value="pizza">Pizza Marguerita</option>
+        <option value="salada">Salada Fresca</option>
+    </select><br><br>
+
+    <label for="mensagem">Mensagem adicional:</label><br>
+    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Observações sobre seu pedido"></textarea><br><br>
+
+    <button type="submit">Enviar Pedido</button>
+</form>
+
+<%- include('partials/footer') %>
+
